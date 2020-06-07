@@ -16,8 +16,11 @@ h1, h2 {
 
 .imgTop{
   display: flex;
-  width: auto;
-  height: auto;
+}
+
+#logoAtTheTop{
+  width: 100%;
+  overflow: hidden;
 }
 
 .headerTitle {
@@ -25,10 +28,7 @@ h1, h2 {
   color: white;
   padding: 7px;
   margin: 10px;
-}
-
-.titleSite {
-  /* text-align: center; */
+  align-items: center;
 }
 
 /* navigation bar */
@@ -39,7 +39,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #03045e;
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -83,7 +83,6 @@ li a:hover {
   border: 2px solid #03045e;
   width: 250px;
   height: 300px;
-  /* justify-content: center; */
   margin: 20px 20px 0px 20px;
 }
 
@@ -213,27 +212,45 @@ input[type=submit]:hover {
 
 .contactInfoHead{
   text-align: center;
-  padding: 10px;
   font-size: 22px;
   color: white;
 }
 
 .outterContact{
   display: flex;
-  flex-direction: column;
-  border: 2px solid white;
+  justify-content: center;
+  border: 1px solid white;
   border-radius: 8px;
-  padding: 10px;
-  align-items: center;
+  background-color: #03045e;
+  overflow: hidden;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .contactInfo{
-  text-align: center;
-  padding-top: 20px;
-  text-align: center;
-  font-size: 22px;
-  color: white;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 15px;
+  overflow: hidden;
 }
+
+.aClass:link{
+  color: #03045e;
+  text-decoration:none;
+}
+
+.aClass:visited{
+  color: rgb(15, 71, 90);
+  text-decoration:none;
+}
+
+.aClass:active {
+  color: rgb(173, 216, 230);
+  text-decoration:none;
+}
+
 
 
 /* GOOGLE MAPS */
@@ -244,28 +261,35 @@ input[type=submit]:hover {
   text-align: center;
   align-content: center;
   padding-top: 10px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .gmap_canvas {
   overflow:hidden;
   background:none!important;
   padding: 20px;
+  border-radius: 8px;
+  border: 1px solid white;
+  margin-left: 12px;
+  margin-right: 12px;
+  overflow: hidden;
 }
 
 
 /* MEDIUM DEVICES IPAD */
 @media screen and (min-width: 500px) {
+  #logoAtTheTop{
+    width: 100%;
+    overflow: hidden;
+  }
+  
   .headerTitle{
     justify-content: space-around;
     }
 
   .fullHalf, .main{
     flex-direction: row;
-  }
-
-  .myImg {
-
-  }
   
   ul {
     list-style-type: none;
@@ -273,7 +297,7 @@ input[type=submit]:hover {
     padding: 0;
     overflow: hidden;
     background-color: #03045e;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
   }
@@ -308,6 +332,26 @@ input[type=submit]:hover {
     padding: 10px;
   }
 
+  .outterContact{
+    display: flex;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: #03045e;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  
+  .contactInfo{
+    flex-direction: space-between;
+    font-size: 22px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 15px;
+    overflow: hidden;
+  }
+
   .mapouter{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -318,6 +362,9 @@ input[type=submit]:hover {
     margin-top: 60px;
     border-radius: 8px;
     border: 1px solid white;
+    overflow: hidden;
+    margin-left: 12px;
+    margin-right: 12px;
   }
 
   input[type=reset] {
@@ -354,19 +401,13 @@ input[type=submit]:hover {
 
 /* BIG DEVICES  KINDLE*/
 @media screen and (min-width: 800px) {
-
-#logoAtTheTop{
-  /* height: 400px;
-  width: 1500px; */
-  height: auto;
-  width: auto;
-  border: red solid 10px;
+  .headerTitle{
+justify-content: space-around;
 }
 
-
-.headerTitle{
-justify-content: space-around;
-border: blue solid 5px;
+#logoAtTheTop{
+  width: 100%;
+  overflow: hidden;
 }
 
 ul {
@@ -410,6 +451,28 @@ margin-bottom: 20px;
 padding: 30px;
 }
 
+.outterContact{
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: #03045e;
+  overflow: hidden;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.contactInfo{
+  flex-direction: space-between;
+  font-size: 22px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 15px;
+  overflow: hidden;
+}
+
 .mapouter{
 margin-top: 20px;
 margin-bottom: 20px;
@@ -420,6 +483,9 @@ box-align: center;
 margin-top: 60px;
 border-radius: 8px;
 border: 1px solid white;
+margin-left: 120px;
+margin-right: 120px;
+overflow: hidden;
 }
 
     /* flex direction can be side by side */
@@ -454,7 +520,6 @@ border: 1px solid white;
   input[type=submit]:hover {
     background-color: #333;
   }
-
 
 }
 
