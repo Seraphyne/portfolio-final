@@ -17,4 +17,7 @@ Had made the necessary changes to make the portfolio looks like it should:
 6) Updated the "First Project" since the Quiz App was already approved with links to the repo and live.
 7) Updated the "Second Project"'s name.
 
+###### New version 4.0
+Had made the necessary changes to make the portfolio looks like it should:
+1) Made some changes on the email submission.
 
