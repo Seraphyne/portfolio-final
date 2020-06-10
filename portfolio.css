@@ -108,6 +108,11 @@ li a:hover {
   font-size: 22px;
 }
 
+.titleEmail{
+  color:#03045e;
+  font-size: 22px;
+}
+
 p {
   padding: 5px;
 }
@@ -278,7 +283,7 @@ input[type=submit]:hover {
 
 
 /* MEDIUM DEVICES IPAD */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   #logoAtTheTop{
     width: 100%;
     overflow: hidden;
